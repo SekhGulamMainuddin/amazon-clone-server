@@ -13,7 +13,7 @@
 
   <p><br></p>
   
-  Project Repository - [https://github.com/SekhGulamMainuddin/AmazonCloneFlutter ](https://github.com/SekhGulamMainuddin/AmazonCloneFlutter) 
+  Flutter Project Repository - [https://github.com/SekhGulamMainuddin/AmazonCloneFlutter ](https://github.com/SekhGulamMainuddin/AmazonCloneFlutter) 
   
   # API hosted on Vercel <a href="https://vercel.com" target="_blank" rel="noreferrer"> <img src="https://user-images.githubusercontent.com/73953395/236639228-abe48540-7460-4984-89b0-cc0e5c8ed7cd.png" alt="vercel" width="60" height="60"/> </a> &nbsp; 
   
