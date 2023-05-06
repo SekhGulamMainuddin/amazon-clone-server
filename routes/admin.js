@@ -2,6 +2,7 @@ const express = require('express');
 const adminRouter = express.Router();
 const admin = require('../middlewares/admin');
 const {Product} = require('../models/product');
+const Order = require("../models/order");
 
 adminRouter.post('/api/admin/add-product', admin, async (req, res) => {
     try {
