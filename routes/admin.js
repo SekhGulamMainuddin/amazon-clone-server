@@ -67,7 +67,7 @@ adminRouter.get("/admin/get-orders", admin, async (req, res) => {
             orders[i].products[j].quantity * orders[i].products[j].product.price;
         }
       }
-      // CATEGORY WISE ORDER FETCHING
+      
       let mobileEarnings = await fetchCategoryWiseProduct("Mobiles");
       let essentialEarnings = await fetchCategoryWiseProduct("Essentials");
       let applianceEarnings = await fetchCategoryWiseProduct("Appliances");
