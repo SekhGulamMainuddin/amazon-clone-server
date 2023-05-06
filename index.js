@@ -5,7 +5,6 @@ const authRouter= require("./routes/auth");
 const adminRouter= require("./routes/admin");
 const productRouter= require("./routes/product");
 const userRouter= require("./routes/user");
-const serverless= require("serverless-http");
 
 dotenv.config();
 
@@ -29,6 +28,3 @@ app.use(userRouter);
 app.listen(PORT, "0.0.0.0", ()=>{
     console.log(`connected to ${PORT}`)
 });
-
-module.exports= app
-module.exports.handler = serverless(app);
