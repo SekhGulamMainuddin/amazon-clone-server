@@ -18,6 +18,10 @@ mongoose.connect(process.env.MONGO_URL).then(()=>{
     console.log(e)
 });
 
+app.use("/",(req,res)=>{
+    res.json({msg:"Amazon Clone Server"});
+});
+
 app.use(express.json());
 app.use(authRouter); 
 app.use(adminRouter);
