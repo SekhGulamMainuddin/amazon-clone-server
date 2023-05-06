@@ -6,6 +6,15 @@ const adminRouter= require("./routes/admin");
 const productRouter= require("./routes/product");
 const userRouter= require("./routes/user");
 const serverless= require("serverless-http");
+const router = express.Router();
+
+router.get("/", (req, res) => {
+  res.json({
+    hello: "hi!"
+  });
+});
+
+app.use(`/.netlify/functions/api`, router);
 
 dotenv.config();
 
@@ -24,6 +33,8 @@ app.use(authRouter);
 app.use(adminRouter);
 app.use(productRouter);
 app.use(userRouter);
+
+app.get("/")
 
 
 app.listen(PORT, "0.0.0.0", ()=>{
